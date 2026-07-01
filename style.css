@@ -1,27 +1,64 @@
 /*Header container*/
-.container{
-display:flex;
-justify-content: space-between;
-align-items: center;
-padding: 8px 80px;
-background-color: bisque;
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-/*position:sticky ;*/
-top:0
-
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 80px;
+  background-color: bisque;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /*position:sticky ;*/
+  top: 0;
+}
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 80px;
+}
+.hero {
+  min-height: 80vh;
+}
+/*Hero Heading*/
+.hero-content h1 {
+  font-size: 48px;
+  color: aqua;
+  margin-bottom: 20px;
+}
+/*Hero paragraph*/
+.hero-content p {
+  font-size: 18px;
+  color: purple;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+/*Hero Content Button*/
+.hero-content button {
+  padding: 12px 24px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: olivedrab;
+  color: white;
+  cursor: pointer;
+}
+.hero-content button:hover {
+  background-color: darkgreen;
 }
 /* color to logo text*/
 .logo h3 {
-    color: olivedrab;
+  color: olivedrab;
 }
 /*remove underline from navigation links */
 nav a {
-        text-decoration: none;
-
+  text-decoration: none;
+  color: blue;
+}
+nav a:hover {
+  color: olive;
 }
 /*put space between navigation text*/
-nav  {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
