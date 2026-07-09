@@ -1,3 +1,9 @@
+/* *{
+  margin:0;
+  padding:0;
+  box-sizzing:border-box;
+} */
+
 /*container styles*/
 .container {
   width: 90%;
@@ -65,7 +71,7 @@ nav a:hover {
 /*put space between navigation text*/
 nav {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; (because row is default direction) */
   gap: 20px;
 }
 
@@ -119,3 +125,285 @@ nav {
 .why-choose {
   padding: 80px 0;
 }
+.why-choose h2 {
+  font-size: 40px;
+  color: purple;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/*cards container to arrange*/
+.cards {
+  display: flex;
+  gap: 20px;
+}
+/*card design*/
+.card {
+  flex: 1; /*it put them in same size nad shape*/
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 110px;
+  box-shadow: 0 2px 10px rgba(31, 10, 89, 0.1);
+  text-align: center;
+}
+/*card-heading*/
+.card h3 {
+  font-size: 24px;
+  color: olivedrab;
+  margin-bottom: 15px;
+}
+.card p {
+  font-size: 16px;
+  color: #594d4d;
+  line-height: 1.6;
+}
+.card:hover {
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+/*featured product section*/
+.products {
+  padding: 80px 0;
+}
+/*product head*/
+.products h2 {
+  font-size: 40px;
+  color: purple;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/*products cards container*/
+.product-cards {
+  display: flex;
+  gap: 20px;
+}
+/*product card*/
+.product-card {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+/*product image*/
+.product-card img {
+  width: 100%;
+  max-width: 180px;
+  height: 280px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.product-card h3 {
+  font-size: 22px;
+  color: olivedrab;
+  margin-bottom: 10px;
+}
+.product-card p {
+  font-size: 16px;
+  color: brown;
+  margin-bottom: 10px;
+}
+/*product card button*/
+.product-card button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  background-color: olivedrab;
+  color: white;
+  cursor: pointer;
+}
+.product-card:hover {
+  transform: translateY(-10px);
+}
+/*Testimonial section*/
+.testimonials {
+  padding: 80px 0;
+}
+/*Testimonials Heading*/
+.testimonials h2 {
+  font-size: 40px;
+  color: purple;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/*testimonials cards cintainer*/
+.testimonials-cards {
+  display: flex;
+  gap: 20px;
+}
+/*testimonial-card*/
+.testimonial-card {
+  flex: 1;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  /* color:green; */
+}
+/*customer name*/
+.testimonial-card h4 {
+  font-size: 22px;
+  color: olive;
+  margin-bottom: 10px;
+}
+/*star rating*/
+.testimonial-card p {
+  font-size: 18px;
+  color: gold;
+  margin-bottom: 15px;
+}
+/*review text*/
+.testimonial-card q {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  font-style: italic;
+}
+/* Review text
+.testimonial-card{
+  font-size:16px;
+  color:aquamarine;
+  line-height:1.6;
+  font-style:italic;
+} */
+/*contact section*/
+.contact {
+  padding: 80px 0;
+}
+/*contact heading*/
+.contact h2 {
+  font-size: 40px;
+  color: purple;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/*contact paragraph*/
+.contact p {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+/*contact form*/
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+/*form lables*/
+.contact label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+/*text amd input area*/
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+.contact input:focus,
+.contact textarea:focus{
+  border-color:olivedrab;
+}
+/*contact from button*/
+.contact button{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:8px;
+  background-color:olivedrab;
+  color:white;
+  font-size:17px;
+  cursor:pointer;
+  transition:background-color 0.3s ease;
+}
+.contact button:hover{
+  background-color:darkgreen;
+}
+/*footer*/
+footer{
+  background-color:#222;
+  color:white;
+  padding:60px 0 20px;
+}
+footer .container{
+  display:flex;
+  gap:40px;
+  justify-content: space-between;
+}
+footer h3{
+  margin-bottom:20px;
+  color:chartreuse;
+}
+footer p{
+  margin-bottom:10px;
+  line-height:1.6;
+}
+/*footer links*/
+footer a{
+  display: block;
+  color:white;
+  text-decoration:none;
+  margin-bottom:10px;
+transition:color 0.3s ease;
+}
+footer a:hover{
+  color:gold;
+}
+/*copyright*/
+footer > p{
+  text-align:center;
+  margin-top:40px;
+  padding-top:20px;
+  border-top:1px solid #555;
+  font-size:14px;
+}
+
+/*media query*/
+@media (max-width:768px){
+      /* CSS here runs only on screens 768px wide or smaller */
+
+      header .container,
+      .hero .container,
+      .about .container,
+      .cards,
+      .product-cards,
+      .testimonials-cards,
+      footer .container{
+        flex-direction: column;
+      }
+      nav{
+        justify-content: center;
+        flex-wrap:wrap;
+      }
+      .hero-content h1,
+      .about-content h2,
+      .why-choose h2,
+      .products h2,
+      .testimonials h2,
+      .contact h2{
+font-size:32px;
+      }
+      .hero-content{
+        text-align:center;
+      }
+.hero .container,
+.about .container,
+.cards,
+.product-cards,
+.testimonials-cards,
+footer .container{
+  gap:30px;
+}
+    }
